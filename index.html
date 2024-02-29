@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junta Marcelino 2024</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Junta Marcelino 2024</h1>
+        <form id="form-agregar">
+            Nombre: <input type="text" id="nombre">
+            <input type="button" value="Agregar" onclick="agregarInvitado()">
+        </form>
+        <br>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Acción</th>
+            </tr>
+            <tbody id="lista-invitados">
+                <!-- Aquí se mostrarán los invitados -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
