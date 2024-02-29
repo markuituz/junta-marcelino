@@ -18,6 +18,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 16px; /* Tamaño del título */
 }
 
 form {
@@ -25,10 +26,12 @@ form {
 }
 
 #nombre {
-    width: 200px; /* Ancho del campo de nombre */
+    width: calc(100% - 40px); /* Ancho del campo de nombre */
+    max-width: 300px; /* Ancho máximo del campo de nombre */
     padding: 10px; /* Espaciado interno */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Margen inferior */
 }
 
 table {
@@ -69,8 +72,26 @@ input[type="button"] {
     cursor: pointer; /* Cambiar cursor a mano */
     border-radius: 5px; /* Bordes redondeados */
     transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+    width: 100%; /* Ancho del botón */
+    max-width: 200px; /* Ancho máximo del botón */
+    margin: 0 auto 20px; /* Margen superior y inferior de 20px y centrado horizontal */
 }
 
 input[type="button"]:hover {
     background-color: #45a049; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    #nombre {
+        margin-bottom: 10px; /* Reducir el margen inferior del campo de nombre en pantallas pequeñas */
+    }
+
+    input[type="button"] {
+        margin-top: 10px; /* Añadir un margen superior al botón en pantallas pequeñas */
+    }
 }
