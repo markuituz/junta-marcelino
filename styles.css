@@ -18,7 +18,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 16px; /* Tamaño del título */
+    font-size: 24px; /* Tamaño del título */
 }
 
 form {
@@ -32,6 +32,7 @@ form {
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
     margin-bottom: 20px; /* Margen inferior */
+    font-size: 12px; /* Tamaño de la fuente del campo de texto */
 }
 
 table {
